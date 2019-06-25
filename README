@@ -1,0 +1,10 @@
+- running the code 
+	run it using different termiinals with this commands
+	machine1% python netser.py -p 12345 -n 400 -e 0.00001
+	machine2% python netcli.py -s machine1 -c1 -p 12345 -l 512 -r 10 -n 400 -w 3 -b 10
+	
+	
+	machine1% python srserver.py -p 12345 -n 400 -e 0.00001 -W 3 -B 10000
+	machine2% python srclient.py -s machine1 -c1 -p 12345 -l 512 -r 10 -n 400 -w 3 -b 10
+	
+	use -d if debug mode is necessary
